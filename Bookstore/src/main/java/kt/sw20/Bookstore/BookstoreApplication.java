@@ -34,6 +34,8 @@ public class BookstoreApplication {
 			
 			brepository.save(new Book("Kirja", "Matti Mikkonen", "1234", "2019", crepository.findByName("Horror").get(0)));
 			brepository.save(new Book("Uusi kirja", "Pertti Pekkonen", "5433", "2019", crepository.findByName("Scifi").get(0)));	
+			brepository.save(new Book("Kirja2", "Matti Mikkonen", "4325", "2011", crepository.findByName("Horror").get(0)));
+			brepository.save(new Book("Uusi kirja2", "Pertti Pekkonen", "5463", "2000", crepository.findByName("Scifi").get(0)));	
 			
 			for (Book book : brepository.findAll()) {
 				log.info(book.toString());
